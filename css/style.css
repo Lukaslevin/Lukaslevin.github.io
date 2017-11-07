@@ -24,205 +24,187 @@ SECTION 8: Media Queries
 
 body {
 	margin: 0;
+    background-color: black;
 }
 
 /***********************************************/
 /*******************  nav  *********************/
 /***********************************************/
 
+* {
+    font-family: 'Russo One', sans-serif, Helvetica;
+}
+
+.navButton {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    padding: .5em;
+    background-color: rgba(99,100,100,.84);
+    border: solid #aaa;
+    border-width: 0 0 1px;
+}
+
+.navButton a {
+    color: #eee;
+    text-decoration: none;
+    padding: 0 0 0 .5em;
+}
+
+i {
+    font-size: 1em;
+    color: #eee;
+    padding: 0 1em 0 0;
+    transition: color .5s;
+ }
+
+i:hover {
+    color: #333;
+ }
+
+ #nav {
+    position: fixed;
+    top: 2em;
+    left: -72%;
+    width: 72%;
+    margin: 0;
+    height: 100%;
+    background-color: #333;
+    background-color: rgba(0,0,0,.84);
+    transition: left .5s;
+}
+
+#nav:target {
+    left: 0;
+}
+
 nav {
-	background-color: rgba(255,255,255,.9);
-	position: fixed;
-	width: 100%;
-	top: 0;
+    z-index: 1000;
 }
 
-nav ol {
-	text-align: center;
-	padding: .5em;
-	margin-top: -13px;
+nav ul {
+    margin: 0;
+    padding: 0;
+    margin-top: .5em;
 }
-
 nav li {
-	display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
 }
 
-nav a {
-	font-size: 1.05rem;
-	font-weight: 400;
-	text-decoration: none;
-	padding: 1em .4em;
-	color: black;
+nav li a {
+    color: #eee;
+    text-decoration: none;
+    display: block;
+    padding: .5em 1em;
+    transition: all .5s;
 }
 
-nav a:hover {
-	background: black;
-	color: #eee;
+nav li a:hover {
+    color: #eee;
+    text-decoration: none;
+    background-color: #eee;
+    color: #333;
 }
 
-.logo {
-	max-width: 130px;
-	float: left;
-	border: 0.250em solid #333;
-	margin: 0.313em;
-	padding: 0.125em;
+/* produces a blank line in mobile nav, but is
+hidden when on wider screens. */
+.hiddenLink {
+    display: block;
 }
 
 /***********************************************/
 /******************* header ********************/
 /***********************************************/
+header h1 {
+    font-size: 2.6em;
+    padding : 1em;
+    text-align: center;
+    color: red;
+    margin-bottom: -1em;
+}
 
 header{
-	background-image: url('../img/jeep-background.png');
-	background-size: cover;
-	padding: 20px;
-	color: #eee;
-	text-align: center;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
-header h1{
-	font-size: 80px;
-}
-
-header h2{
-	margin-top: -3rem;
-	font-weight: 400;
-}
-
-header h3{
-	font-size: 30px;
-	font-weight: 100;
-	padding-left: .5rem;
-	padding-right: .5rem;
-}
-
-header h5{
-	font-size: 50px;
+.line{
+    width: 50%;
 }
 
 /***********************************************/
 /*******************  atricle  *****************/
 /***********************************************/
 
-article{
-	padding: 2em;
-	text-align: left;
-}
+
 
 /***********************************************/
-/****************** sections *******************/
+/******************  sections  *****************/
 /***********************************************/
 
 .hero{
-	background-color: rgba(0,0,0,.2);
-	margin-top: -6rem;
+    margin-bottom: 6em;
+}
+
+.hero img{
+    margin-left: 4.8em;
+}
+
+.hero h3, h4, p{
+    text-align: center;
+}
+
+.hero h2{
+    margin-left: 1em;
+    color: #636464;
 }
 
 .hero h3{
-	text-align: center;
+    font-size: 2em;
 }
 
-.diy{
-	margin-top: -1.3rem;
-	text-align: center;
-	background-color: rgb(0,0,0);
-	color: white;
-}
-
-.diy h2{
-	padding-top: 1em; 
-}
-
-.diy article{
-	margin-top: -2em; 
-}
-
-.products{
-	background-color: rgba(0,0,0,.2);
-	text-align: center;
-	padding-top: 0.8rem;
-}
-
-.products article{
-	margin-top: -2em;
-}
-
-.products h4{
-	text-align: left;
-}
-
-
-.headshot {
-	float: bottom;
-	border: 0.250em solid white;
-	margin: 0.313em;
-	padding: 0.125em;
-}
 
 /***********************************************/
 /******************* footer ********************/
 /***********************************************/
 
-footer {
-	background-color: black;
-}
-
-.footer li {
-	text-decoration: none;
-	font-weight: 100;
-	color: #eee;
-	text-align: center;
-	margin: 1em;
-	list-style-type: none;
-}
-
-footer ol {
-	padding: 1em;
-	margin: 0;
-}
-footer a {
-	font-size: .9rem;
-	font-weight: 100;
-	color: #eee;
-	text-decoration: none;
-	padding: 1em;
-}
-
-footer a:hover {
-	background: #eee;
-	color: #333;
+footer{
+    background-color: #636464;
+    padding: .5em;
+    text-align: center;
+    font-size: 11px;
 }
 
 /***********************************************/
 /*******************  text  ********************/
 /***********************************************/
 
-h4{
-	font-weight: 400;
-}
-
-.diy b{
-	color: #41b800;
-	font-size: 25px;
+h1, h2, h3, h4, p {
+    color: white;
 }
 
 p{
-	font-weight: 200;
-}
-
-h1 h2 h3 h4 h5 p q i{
-	font-family: 'Helvetica', Raleway, Arial, Sans Serif;
+    font-family: Helvetica, sans-serif;
+    padding: 2em;
 }
 
 /***********************************************/
 /*************** helper classes ****************/
-/***********************************************/
 
 .wrapper {
-	max-width: 565px;
-	margin: 0 auto;
+    max-width: 565px;
+    margin: 0 auto;
+}
+
+.posters {
+    float: bottom;
+    border: 0.3em solid white;
+    margin: 0.313em;
+    padding: 0.125em;
 }
 
 /***********************************************/
@@ -230,229 +212,43 @@ h1 h2 h3 h4 h5 p q i{
 /***********************************************/
 /****** 30em = 480px based on 16px per em ******/
 
-@media only screen and (min-width: 29em) {
+@media only screen and (min-width: 30em) {
+    .navButton {
+        display: none;
+    }
 
-nav li a {
-	font-size: 1.3rem;
-	padding: 1em 1em;
+    #nav {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        background-color: #333;
+        background-color: rgba(99,100,100,.84);
+        position: static;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav ul {
+        text-align: center;
+        margin: 0;
+    }
+
+    nav li {
+        display: inline;
+    }
+
+    nav li a {
+        display: inline-block;
+        padding: .5em 1em;
+    }
+
+    .hiddenLink {
+        display: none;
+    }
 }
 
-}
 
-
-@media only screen and (min-width: 35em) {
-
-nav li a {
-	font-size: 1.5rem;
-	padding: 1em 1em;
-
-}
-
-.logo {
-	max-width: 140px;
-}
-
-.headshot {
-	float: right;
-	padding-right: 10em;
-	border: 0.250em solid white;
-	margin: 0.313em;
-	padding: 0.125em;
-}
-
-.diy{
-	margin-top: 2em;
-	padding-bottom: 7em;
-}
-
-.diy article p{
-	margin-top: 3em;
-	padding-left: 2em;
-	padding-right: 18em;
-}
-
-.headcontainer{
-	background-color: black;
-	padding-right: 2em;
-	margin-top: -3em;
-}
-
-.diy h2{
-	padding-left: 7em;
-}
-
-p{
-		font-size: 16px; 
-}
-
-}
-
-/***********************************************/
-
-@media only screen and (min-width: 47em) {
-
-nav li a {
-	font-size: 1.7rem;
-	padding: 1em 1.4em;
-}
-
-.logo {
-	max-width: 150px;
-}
-
-article{
-	padding: 5em;
-}
-
-footer{
-	text-align: center;
-}
-
-footer li {
-	display: inline-block;
-}
-
-.wrapper {
-	max-width: 700px;
-	margin: 0 auto;
-}
-
-p{
-	font-size: 19px;
-}
-
-header{
-	background-image: url('../img/jeep.png');
-}
-
-.diy b{
-	color: #41b800;
-	font-size: 30px;
-}
-
-}
-
-/***********************************************/
-
-@media only screen and (min-width: 62em) {
-
-.headshot {
-	float: right;
-	padding-right: 10em;
-	border: 0.250em solid white;
-	margin: 0.313em;
-	padding: 0.125em;
-}
-
-.diy{
-	margin-top: 2em;
-	padding-bottom: 4em;
-}
-
-.diy article p{
-	margin-top: 3.5em;
-	padding-left: 2em;
-	padding-right: 18em;
-}
-
-.headcontainer{
-	background-color: black;
-	padding-right: 2em;
-	margin-top: -3em;
-}
-
-.diy h2{
-	padding-left: 7em;
-}
-
-.hero{
-	padding-right: 5em;
-	padding-left: 5em;
-}
-
-.products article{
-	padding-right: .5em;
-	padding-left: .5em;
-}
-
-.footer{
-	padding-right: 5em;
-	padding-left: 5em;
-}
-
-.footer h4{
-		margin-top: -5em;
-}
-
-p, h4{
-		font-size: 22px; 
-}
-
-header{
-	padding: 55px;
-}
-
-footer a{
-	padding: 2em;
-}
-
-}
-
-/***********************************************/
-
-@media only screen and (min-width: 90em) {
-
-.logo {
-	max-width: 160px;
-}
-
-.headshot {
-	float: right;
-	padding-right: 10em;
-	border: 0.250em solid white;
-	margin: 0.313em;
-	padding: 0.125em;
-}
-
-.diy{
-	margin-top: 1em;
-}
-
-.diy article p{
-	margin-top: 4.5em;
-	padding-left: 6em;
-	padding-right: 18em;
-}
-
-.headcontainer{
-	background-color: black;
-	padding-right: 6em;
-	margin-top: -3em;
-}
-
-.diy h2{
-	padding-left: 7em;
-}
-
-p{
-		font-size: 22px; 
-}
-
-header{
-	padding: 87px;
-}
-
-footer a{
-	padding: 4em;
-}
-
-footer{
-	padding-bottom: 2em;
-}
-
-.diy b{
-	color: #41b800;
-	font-size: 35px;
-}
-
-}
+/* Large and up */
+@media screen and (min-width: 64em) {}
