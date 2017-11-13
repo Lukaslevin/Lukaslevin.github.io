@@ -136,6 +136,8 @@ header{
     width: 50%;
 }
 
+
+
 /***********************************************/
 /*******************  atricle  *****************/
 /***********************************************/
@@ -151,11 +153,16 @@ header{
 }
 
 .hero img{
-    margin-left: 4.8em;
+    margin-left: 5em;
 }
 
 .hero h3, h4, p{
     text-align: center;
+}
+
+.hero p{
+    text-align: left;
+    margin-bottom: -3em;
 }
 
 .hero h2{
@@ -165,6 +172,29 @@ header{
 
 .hero h3{
     font-size: 2em;
+}
+
+.hero5{
+    margin-top: -3em;
+    font-family: Helvetica, sans-serif;
+    padding: 2em;
+    text-align: left;
+}
+
+.call{
+    color: white;
+    text-decoration: none;
+    margin-left: 2.5em;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.hero4b{
+    margin-top: 2em;
+}
+
+iframe{
+    margin-top: -4em;
 }
 
 
@@ -192,6 +222,21 @@ p{
     padding: 2em;
 }
 
+.hero4{
+    margin-bottom: 4em;
+}
+
+.hero4 p{
+    text-align: left;
+    margin: -2.5em;
+    margin-left: 1em;
+    margin-right: .5em;
+}
+
+.hero4 h2{
+    margin-left: 1em;
+    color: #636464;
+}
 /***********************************************/
 /*************** helper classes ****************/
 
@@ -205,6 +250,47 @@ p{
     border: 0.3em solid white;
     margin: 0.313em;
     padding: 0.125em;
+}
+
+.hvr-pulse-grow{
+    float: bottom;
+    max-width: 239px;
+    margin: 0.313em;
+    padding: 0.125em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
 /***********************************************/
