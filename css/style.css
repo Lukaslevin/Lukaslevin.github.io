@@ -133,7 +133,7 @@ header{
 }
 
 .line{
-    width: 50%;
+    width: 12em;
 }
 
 
@@ -171,6 +171,32 @@ header{
 }
 
 .hero h3{
+    font-size: 2em;
+}
+
+.hero5{
+    margin-bottom: 6em;
+}
+
+.hero5 img{
+    margin-left: 5em;
+}
+
+.hero5 h3, h4, p{
+    text-align: center;
+}
+
+.hero5 p{
+    text-align: left;
+    margin-bottom: -3em;
+}
+
+.hero5 h2{
+    margin-left: 1em;
+    color: #636464;
+}
+
+.hero5 h3{
     font-size: 2em;
 }
 
@@ -259,6 +285,7 @@ p{
     padding: 0.125em;
     transition: all 0.5s;
     cursor: pointer;
+    margin-top: 3em;
 }
 
 @-webkit-keyframes hvr-pulse-grow {
@@ -298,43 +325,240 @@ p{
 /***********************************************/
 /****** 30em = 480px based on 16px per em ******/
 
-@media only screen and (min-width: 30em) {
-    .navButton {
+@media only screen and (min-width: 33em) {
+
+
+.navButton {
         display: none;
-    }
+}
 
-    #nav {
-        margin: 0;
-        width: 100%;
-        height: auto;
-        background-color: #333;
-        background-color: rgba(99,100,100,.84);
-        position: static;
-    }
+#nav {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    background-color: rgba(99,100,100,.84);
+    position: static;
+}
 
-    nav {
-        margin: 0;
-    }
+nav {
+    margin: 0;
+}
 
-    nav ul {
-        text-align: center;
-        margin: 0;
-    }
+nav ul {
+    text-align: center;
+    margin: 0;
+ }
 
-    nav li {
-        display: inline;
-    }
+nav li {
+    display: inline;
+}
 
-    nav li a {
-        display: inline-block;
-        padding: .5em 1em;
-    }
+nav li a {
+    display: inline-block;
+    padding: .5em 1em;
+}
 
-    .hiddenLink {
-        display: none;
-    }
+.hiddenLink {
+    display: none;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: -1em;
+    margin-top: -1em;
+}
+
+.hero img{
+    margin-left: 10em;
+}
+
+.line{
+    width: 17em;
+}
+
+}
+
+@media screen and (min-width: 50em) {
+
+
+header h1 {
+    font-size: 4.5em;
+    margin-bottom: -1em;
+    margin-top: -1em;
+}
+
+.line{
+    width: 21em;
+}
+
+.hero h2{
+    margin-left: 2em;
+    color: #636464;
+    font-size: 40px;
+}
+
+.hero img{
+    float: left;
+}
+
+.hero h3, h4, p{
+    text-align: center;
+}
+
+.hero p{
+    text-align: left;
+    margin-bottom: 12em;
+    margin-right: 5em;
+    margin-left: 25em;
+}
+
+.hero5 h2{
+    margin-left: 2em;
+    color: #636464;
+    font-size: 40px;
+}
+
+.hero5 a{
+    margin-left: 10em;
+}
+
+.issue{
+    margin-top: 9em;
+}
+
+.issue2{
+    margin-top: 15em;
+    margin-bottom: 12em;
+}
+
+.issue3{
+    margin-bottom: 12em;
+}
+
+.hvr-pulse-grow{
+    margin-top: -6em;
+}
+
+.footer p{
+    font-size: 15px;
+    padding: 0;
+}
+
+.hero a{
+    margin-left: 13em;
+}
+
+.hero4{
+    margin-left: 5em;
+}
+
+}  
+
+@media screen and (min-width: 57em) {
+
+
+.hero p{
+    text-align: left;
+    margin-top: 4em;
+    margin-right: 13em;
+    margin-left: 25em;
+}
+
+} 
+
+@media screen and (min-width: 75em) {
+
+.navButton {
+    padding: 1em;
+}
+
+header h1 {
+    font-size: 6em;
+    margin-bottom: -1em;
+    margin-top: -1.2em;
+}
+
+.line{
+    width: 27em;
+}
+
+.hero h2{
+    margin-left: 3em;
+    color: #636464;
+    font-size: 50px;
+    margin-bottom: 1em;
+}
+
+.hero h3{
+    font-size: 40px;
+    margin-top: 2em;
+}
+
+.hero .hvr-pulse-grow{
+    margin-top: -15em;
+    margin-left: 45em;
+}
+
+.hero img{
+    margin-left: 15em;
+}
+
+.hero p{
+    text-align: left;
+    margin-top: -1em;
+    margin-right: 8em;
+    margin-left: 24em;
+    font-size: 20px;
+}
+
+.hero4{
+    margin-left: 10em;
+}
+
+.hero4 h2{
+    font-size: 50px;
+}
+
+.hero4 p{
+    margin-left: 8em;
+    font-size: 25px;
+}
+
+.issue4{
+    margin-top: 15em;
+}
+
+.hero5 h2{
+    font-size: 50px;
+}
+
+.hero5 p{
+    font-size: 25px;
+}
+
+.hero5 a{
+    margin-left: 15.5em;
+    font-size: 2em;
+}
+
+.hero5 h3{
+    font-size: 50px;
+    margin-top: 2em;
+}
+
 }
 
 
-/* Large and up */
-@media screen and (min-width: 64em) {}
+
+
+
+
+
+
+
+
+
+
+
+
